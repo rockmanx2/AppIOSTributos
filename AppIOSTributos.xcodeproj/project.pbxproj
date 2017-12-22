@@ -15,6 +15,9 @@
 		BA19620B1FEC7B3A007EA39E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA19620A1FEC7B3A007EA39E /* Assets.xcassets */; };
 		BA19620E1FEC7B3A007EA39E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA19620C1FEC7B3A007EA39E /* LaunchScreen.storyboard */; };
 		BA1962191FEC7B3A007EA39E /* AppIOSTributosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1962181FEC7B3A007EA39E /* AppIOSTributosTests.swift */; };
+		BA1962241FEC8778007EA39E /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1962231FEC8778007EA39E /* WebViewController.swift */; };
+		BA1962281FEC8855007EA39E /* WebView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA1962271FEC8855007EA39E /* WebView.xib */; };
+		BA19622A1FEC8F4C007EA39E /* WebViewClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA1962291FEC8F4C007EA39E /* WebViewClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		BA1962141FEC7B3A007EA39E /* AppIOSTributosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppIOSTributosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA1962181FEC7B3A007EA39E /* AppIOSTributosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIOSTributosTests.swift; sourceTree = "<group>"; };
 		BA19621A1FEC7B3A007EA39E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA1962231FEC8778007EA39E /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		BA1962271FEC8855007EA39E /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
+		BA1962291FEC8F4C007EA39E /* WebViewClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +92,12 @@
 				BA1962031FEC7B3A007EA39E /* DataViewController.swift */,
 				BA1962051FEC7B3A007EA39E /* ModelController.swift */,
 				BA1962071FEC7B3A007EA39E /* Main.storyboard */,
+				BA1962271FEC8855007EA39E /* WebView.xib */,
 				BA19620A1FEC7B3A007EA39E /* Assets.xcassets */,
 				BA19620C1FEC7B3A007EA39E /* LaunchScreen.storyboard */,
 				BA19620F1FEC7B3A007EA39E /* Info.plist */,
+				BA1962231FEC8778007EA39E /* WebViewController.swift */,
+				BA1962291FEC8F4C007EA39E /* WebViewClass.swift */,
 			);
 			path = AppIOSTributos;
 			sourceTree = "<group>";
@@ -186,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA19620E1FEC7B3A007EA39E /* LaunchScreen.storyboard in Resources */,
+				BA1962281FEC8855007EA39E /* WebView.xib in Resources */,
 				BA19620B1FEC7B3A007EA39E /* Assets.xcassets in Resources */,
 				BA1962091FEC7B3A007EA39E /* Main.storyboard in Resources */,
 			);
@@ -205,9 +215,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA19622A1FEC8F4C007EA39E /* WebViewClass.swift in Sources */,
 				BA1962021FEC7B3A007EA39E /* RootViewController.swift in Sources */,
 				BA1962061FEC7B3A007EA39E /* ModelController.swift in Sources */,
 				BA1962041FEC7B3A007EA39E /* DataViewController.swift in Sources */,
+				BA1962241FEC8778007EA39E /* WebViewController.swift in Sources */,
 				BA1962001FEC7B3A007EA39E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

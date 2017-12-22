@@ -26,20 +26,36 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
     override init() {
         super.init()
         // Create the data model.
-        let dateFormatter = DateFormatter()
-        pageData = dateFormatter.monthSymbols
+        
+        pageData.append("Beneficios Fiscais")
+        pageData.append("Lei 12973")
+        pageData.append("Lucro da exploracao")
+        pageData.append("Lucro real")
+        pageData.append("Obrigacoes Acessorias")
+        pageData.append("Provisoes Temporarias")
+        pageData.append("Web view")
+        
     }
 
-    func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> DataViewController? {
+    func viewControllerAtIndex(_ index: Int, storyboard: UIStoryboard) -> UIViewController? {
         // Return the data view controller for the given index.
         if (self.pageData.count == 0) || (index >= self.pageData.count) {
             return nil
         }
-
+        
+        if self.pageData[index] == "Web View"{
+            
+            let dataViewController = storyboard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+            dataViewController.dataObject = self.pageData[index]
+            return dataViewController        }else{
+        
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewController(withIdentifier: "DataViewController") as! DataViewController
         dataViewController.dataObject = self.pageData[index]
         return dataViewController
+        }
+        
+        
     }
 
     func indexOfViewController(_ viewController: DataViewController) -> Int {
